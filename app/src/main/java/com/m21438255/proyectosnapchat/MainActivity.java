@@ -33,9 +33,6 @@ import android.widget.Toast;
 
 import com.parse.ParseUser;
 
-/**
- * none
- */
     public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
         static final int TAKE_PHOTO_REQUEST = 0;
         static final int TAKE_VIDEO_REQUEST = 1;
