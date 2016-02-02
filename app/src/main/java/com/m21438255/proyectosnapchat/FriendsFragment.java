@@ -1,4 +1,8 @@
 package com.m21438255.proyectosnapchat;
+
+/**
+ * Created by 21438255 on 13/01/2016.
+ */
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AlertDialog;
