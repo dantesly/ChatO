@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_purple">#3F2466</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="light_red_button">#FFA34A</color>
+    <color name="pressed_yellow_button">#FFCF10</color>
+    <color name="focused_orange_button">#e8aa32</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="apptheme_color">#f44336</color>
+    <color name="msgInbox">#E8662D</color>
+    <color name="redMsgInbox">#ff3d2d</color>
+    <color name="background">#e8c661</color>
+
+    <color name="swipeRefresh1">#FF352D</color>
+    <color name="swipeRefresh2">#C42922</color>
+    <color name="swipeRefresh3">#6B1613</color>
+    <color name="swipeRefresh4">#170504</color>
+</resources>

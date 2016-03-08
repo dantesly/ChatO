@@ -1,47 +1,115 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.m21438255.proyectosnapchat.SignUpActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <EditText
+    <ImageView
+        android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/usernameField"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:hint="@string/username_hint" />
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
-    <EditText
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/subtitle"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/passwordField"
-        android:layout_below="@+id/usernameField"
-        android:layout_centerHorizontal="true"
-        android:hint="@string/password_hint" />
+        android:layout_below="@id/subtitle"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/login_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/login_horizontal_padding"
+        android:paddingRight="@dimen/login_horizontal_padding"
+        android:paddingTop="@dimen/login_vertical_padding"
+        android:paddingBottom="@dimen/login_vertical_padding"
+        android:background="@android:color/white" >
 
-    <EditText
-        android:layout_width="match_parent"
+        <EditText
+            style="@style/AuthEditText"
+            android:id="@+id/usernameField"
+            android:hint="@string/username_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:id="@+id/passwordField"
+            android:layout_below="@+id/usernameField"
+            android:hint="@string/password_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            style="@style/AuthEditText"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailField"
+            android:layout_below="@+id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/email_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <requestFocus/>
+        </EditText>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/emailField"
-        android:layout_below="@+id/passwordField"
+        android:layout_below="@id/editTextLayout"
         android:layout_centerHorizontal="true"
-        android:hint="@string/email_hint" />
+        android:src="@drawable/button_divider"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/AuthButton"
         android:text="@string/sign_up_button_label"
         android:id="@+id/signupButton"
-        android:layout_below="@+id/emailField"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClickRegistro" />
+        android:onClick="onClickRegistro"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@id/buttonDivider"
+        android:layout_below="@+id/editTextLayout" />
+    <Button
+        style="@style/AuthButton"
+        android:text="@string/cancel_button_label"
+        android:id="@+id/cancelButton"
+        android:onClick="onClick"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/buttonDivider"
+        android:layout_below="@+id/editTextLayout"/>
 
     <ProgressBar
         style="?android:attr/progressBarStyleLarge"

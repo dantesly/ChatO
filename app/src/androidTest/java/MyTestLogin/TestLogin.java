@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.m21438255.proyectosnapchat.R;
-import com.m21438255.proyectosnapchat.LoginActivity;
+import com.m21438255.proyectosnapchat.activities.LoginActivity;
 import com.parse.ParseUser;
 
 /**
@@ -29,7 +29,7 @@ public class TestLogin extends ActivityInstrumentationTestCase2<LoginActivity> {
         actividad = getActivity();
         etext1 = (EditText) actividad.findViewById(R.id.usernameField);
         etext2 = (EditText) actividad.findViewById(R.id.passwordField);
-        login = (Button) actividad.findViewById(R.id.button);
+        login = (Button) actividad.findViewById(R.id.loginButton);
     }
 
     protected void tearDown() throws Exception {

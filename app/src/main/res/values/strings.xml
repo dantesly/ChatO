@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">ProyectoSnapchat</string>
+    <string name="app_name">ChatOle</string>
 
     <string name="title_section1">mensajes</string>
-    <string name="title_section2">amigos</string>
+    <string name="title_section2">amigos</string>ç
+
+    <string name="subtitle">Adrian Borja Gonzalo</string>
+    <string name="cancel_button_label">Cancelar</string>
 
     <string name="username_hint">Nombre de usuario</string>
     <string name="password_hint">Contraseña</string>
-    <string name="Login_button_label">Ingresar</string>
+    <string name="Login_button_label">INGRESAR</string>
     <string name="sign_up_text">¡Regístrate!</string>
     <string name="email_hint">E-mail</string>
     <string name="sign_up_button_label">Regístrate</string>
@@ -36,6 +39,6 @@
 
     <string name="Send">Enviar</string>
     <string name="title_activity_view_image">ViewImageActivity</string>
-
+    <string name="content_desc_message_icon">Message Icon</string>
 
 </resources>
